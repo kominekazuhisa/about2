@@ -6,230 +6,280 @@
     <meta name="description" content="K.KOMINE portfolio about page. Design-capable PM / UX Director.">
     <title>K.KOMINE | Design-capable PM / UX Director</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script defer>
+      window.addEventListener("DOMContentLoaded", () => {
+        if (window.lucide) window.lucide.createIcons({ strokeWidth: 2.2 });
+      });
+    </script>
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="https://kominekazuhisa.github.io/top/" aria-label="LITTLE PEAKS DESIGN">
-        <img src="https://likeyou.xxmelonxx.com/image/images/PF/logo_black.png" alt="LITTLE PEAKS DESIGN">
+    <aside class="side-rail">
+      <a class="side-logo" href="https://kominekazuhisa.github.io/top/">
+        <strong>K.KOMINE</strong>
+        <span>PORTFOLIO</span>
       </a>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="#value">VALUE</a>
-        <a href="#works">WORKS</a>
-        <a href="#process">PROCESS</a>
-        <a href="#skills">SKILLS</a>
-        <a class="nav-contact" href="https://kominekazuhisa.github.io/contact/">CONTACT</a>
-      </nav>
-    </header>
 
-    <main>
-      <section class="hero" id="top">
+      <nav class="side-nav" aria-label="Section navigation">
+        <a class="active" href="#about"><i data-lucide="home"></i>ABOUT</a>
+        <a href="#works"><i data-lucide="layout-grid"></i>WORKS</a>
+        <a href="#skills"><i data-lucide="chart-no-axes-combined"></i>SKILLS</a>
+        <a href="#license"><i data-lucide="badge-check"></i>LICENSE</a>
+        <a href="#history"><i data-lucide="calendar-days"></i>HISTORY</a>
+        <a href="https://kominekazuhisa.github.io/contact/"><i data-lucide="mail"></i>CONTACT</a>
+      </nav>
+
+      <div class="side-message">
+        <p>Design makes<br>people happy!</p>
+        <i data-lucide="flag"></i>
+        <strong>K.KOMINE</strong>
+        <span>Design-capable<br>PM / UX Director</span>
+      </div>
+    </aside>
+
+    <main class="page-shell">
+      <header class="top-nav">
+        <a class="active" href="#about">ABOUT</a>
+        <a href="#works">WORKS</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#license">LICENSE</a>
+        <a href="#history">HISTORY</a>
+        <a class="contact-button" href="https://kominekazuhisa.github.io/contact/"><i data-lucide="mail"></i>CONTACT <i data-lucide="arrow-right"></i></a>
+      </header>
+
+      <section class="hero-dashboard" id="about">
         <div class="hero-copy">
-          <p class="eyebrow">K.KOMINE PORTFOLIO / ABOUT</p>
+          <p class="section-kicker">ABOUT ME</p>
           <h1>
-            <span class="hero-main">事業とユーザー体験をつなぐ</span>
-            <span class="hero-role">Design-capable PM / UX Director</span>
+            <span>デザインの力で、</span>
+            <span>ビジネスとユーザー体験をつなぐ。</span>
           </h1>
-          <p class="lead">
-            Web・SNS・ゲーム・AIチャット領域で、企画、要件定義、UX設計、UI具体化、運用設計まで横断。
-            デザイン理解を軸に、未整備なプロジェクトを前に進めることを得意としています。
+          <p class="role-line">
+            <strong>Design-capable PM / UX Director</strong>
+            <span>|</span>
+            <span>K.KOMINE（小峰 和久）</span>
           </p>
-          <div class="hero-actions">
-            <a class="primary-button" href="#works">実績を見る</a>
-            <a class="secondary-button" href="#process">進め方を見る</a>
-          </div>
+          <p class="lead">
+            企画・要件定義・UX設計・UI具体化・運用設計までを一気通貫でリード。
+            AIチャット / SNS / ゲーム / BtoBサービスなど多様なプロダクトで、
+            ユーザーに価値を届ける仕組みづくりを支援しています。
+          </p>
         </div>
 
-        <aside class="hero-card" aria-label="Profile summary">
-          <div class="portrait-wrap">
+        <div class="hero-mark">
+          <div class="portrait-badge">
             <img src="https://likeyou.xxmelonxx.com/image/images/PF/illust-main3.png" alt="K.KOMINE illustration">
           </div>
-          <div class="role-panel">
-            <p class="role-title">Current Focus</p>
-            <p>PM / UX設計 / AIチャット仕様 / UIプロトタイピング</p>
+          <div class="name-ribbon">K.KOMINE</div>
+          <p>Design-capable<br>PM / UX Director</p>
+        </div>
+
+        <div class="hero-stats" aria-label="Career highlights">
+          <div class="stat-card">
+            <i data-lucide="flag"></i>
+            <span>プロジェクト実績</span>
+            <strong>50+</strong>
+            <small>案件以上</small>
           </div>
-        </aside>
+          <div class="stat-card">
+            <i data-lucide="users-round"></i>
+            <span>開発・運用タイトル</span>
+            <strong>4</strong>
+            <small>立ち上げ経験</small>
+          </div>
+          <div class="stat-card">
+            <i data-lucide="target"></i>
+            <span>売上改善実績</span>
+            <strong>+300%</strong>
+            <small>最大改善率</small>
+          </div>
+          <div class="stat-card">
+            <i data-lucide="calendar-check"></i>
+            <span>PM / ディレクション</span>
+            <strong>15+</strong>
+            <small>年</small>
+          </div>
+        </div>
       </section>
 
-      <section class="metrics" aria-label="Career metrics">
-        <div>
-          <strong>20年以上</strong>
-          <span>Web・SNS・ゲーム領域</span>
+      <section class="panel-strip" id="value">
+        <div class="panel-title">
+          <h2>私の強み</h2>
+          <span>VALUE</span>
         </div>
-        <div>
-          <strong>15年以上</strong>
-          <span>ディレクション / PM</span>
+        <article>
+          <i data-lucide="lightbulb"></i>
+          <h3>上流から並走するPM</h3>
+          <p>企画・要件定義からリリース・運用まで、事業とユーザーの両面でリードします。</p>
+        </article>
+        <article>
+          <i data-lucide="users-round"></i>
+          <h3>UXを起点にした設計</h3>
+          <p>ペルソナ・導線・情報設計をもとに、使いやすく成果につながる体験を設計。</p>
+        </article>
+        <article>
+          <i data-lucide="pen-tool"></i>
+          <h3>UIをカタチにする力</h3>
+          <p>FigmaでのUI設計・プロトタイピングで、チームの認識を揃え品質を担保。</p>
+        </article>
+        <article>
+          <i data-lucide="chart-column-increasing"></i>
+          <h3>データで改善・成長</h3>
+          <p>KPI設計・分析に基づく改善提案で、サービスの成長に貢献します。</p>
+        </article>
+      </section>
+
+      <section class="capability-panel">
+        <div class="panel-title">
+          <h2>できること</h2>
+          <span>CAPABILITY</span>
         </div>
-        <div>
-          <strong>4タイトル</strong>
-          <span>ゲーム新規立ち上げ・運用</span>
-        </div>
-        <div>
-          <strong>AI領域</strong>
-          <span>チャット体験・要件定義</span>
+        <div class="capability-grid">
+          <article>
+            <i data-lucide="search"></i>
+            <h3>企画・戦略設計</h3>
+            <p>市場調査 / 競合分析<br>事業戦略 / KPI設計<br>コンセプト設計</p>
+          </article>
+          <article>
+            <i data-lucide="clipboard-list"></i>
+            <h3>要件定義・設計</h3>
+            <p>要件定義 / 仕様設計<br>情報設計 / 画面設計<br>会話設計 / 状態設計</p>
+          </article>
+          <article>
+            <i data-lucide="user-round-check"></i>
+            <h3>UX設計</h3>
+            <p>ペルソナ / ジャーニーマップ<br>導線設計 / 情報設計<br>チュートリアル設計</p>
+          </article>
+          <article>
+            <i data-lucide="git-branch"></i>
+            <h3>UIデザイン</h3>
+            <p>UI設計 / デザインシステム<br>プロトタイピング<br>デザイン改善</p>
+          </article>
+          <article>
+            <i data-lucide="code-xml"></i>
+            <h3>開発ディレクション</h3>
+            <p>WBS / 進行管理<br>品質管理 / 課題管理<br>外部パートナー連携</p>
+          </article>
+          <article>
+            <i data-lucide="rocket"></i>
+            <h3>運用・改善</h3>
+            <p>リリース / 運用設計<br>データ分析 / ABテスト<br>グロース改善</p>
+          </article>
         </div>
       </section>
 
-      <section class="section" id="value">
-        <div class="section-heading">
-          <p class="eyebrow">VALUE PROPOSITION</p>
-          <h2>上流から画面・運用まで落とし込む横断型ディレクター</h2>
-          <p>
-            要望をそのまま形にするだけではなく、ユーザー体験、事業目的、運用現場をつなぎ、
-            実装に向けた具体的な設計へ整理します。
-          </p>
+      <section class="works-panel" id="works">
+        <div class="panel-title">
+          <h2>主な実績</h2>
+          <span>HIGHLIGHTS</span>
         </div>
-        <div class="value-grid">
-          <article class="value-card">
-            <span>01</span>
+        <div class="works-row">
+          <article>
+            <time>2024.10 - 継続中</time>
+            <strong>AIチャット</strong>
+            <h3>AIチャットゲーム開発PJ</h3>
+            <p>PM / ディレクターとして参画。企画・要件定義、AIチャット仕様、会話設計、UI/UX設計を担当。</p>
+          </article>
+          <article>
+            <time>2024.08 - 継続中</time>
+            <strong>ゲーム</strong>
+            <h3>コンテンツPF開発PJ</h3>
+            <p>ディレクターとして参画。機能追加や体験改善のディレクションを担当。</p>
+          </article>
+          <article>
+            <time>2024.09</time>
+            <strong>フリーランス</strong>
+            <h3>求人LP制作（2案件）</h3>
+            <p>求人LP企画・デザイン・コーディングまで担当。短納期での制作を実現。</p>
+          </article>
+          <article>
+            <time>2019.08 - 2024.07</time>
+            <strong>ゲーム</strong>
+            <h3>ゲーム運用・改善</h3>
+            <p>4タイトルの運用に従事。売上改善やイベント企画、ランキング上位実績に貢献。</p>
+          </article>
+          <a class="more-card" href="https://kominekazuhisa.github.io/top/">VIEW MORE<br>WORKS <i data-lucide="arrow-right"></i></a>
+        </div>
+      </section>
+
+      <section class="process-panel" id="process">
+        <div class="panel-title">
+          <h2>仕事の進め方</h2>
+          <span>PROCESS</span>
+        </div>
+        <ol class="process-flow">
+          <li>
+            <i data-lucide="search"></i>
+            <h3>調査・分析</h3>
+            <p>市場・ユーザー・現状を調査し、課題と機会を整理します。</p>
+          </li>
+          <li>
+            <i data-lucide="target"></i>
             <h3>企画・要件定義</h3>
-            <p>事業目的、ターゲット、運用条件を整理し、プロジェクトの前提と優先順位を明確化します。</p>
-          </article>
-          <article class="value-card">
-            <span>02</span>
-            <h3>UX / 情報設計</h3>
-            <p>ペルソナ、ジャーニー、導線、状態遷移を組み立て、体験全体の筋道を設計します。</p>
-          </article>
-          <article class="value-card">
-            <span>03</span>
-            <h3>UI具体化</h3>
-            <p>Figmaを用いた画面設計、プロトタイピング、デザインガイドライン整備まで対応します。</p>
-          </article>
-          <article class="value-card">
-            <span>04</span>
-            <h3>推進・改善</h3>
-            <p>タスク管理、課題整理、関係者調整、KPI改善まで、現場が動く状態を作ります。</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section work-section" id="works">
-        <div class="section-heading">
-          <p class="eyebrow">SELECTED EXPERIENCE</p>
-          <h2>経験を「職務経歴」ではなく、提供価値で見せる</h2>
-        </div>
-        <div class="work-grid">
-          <article class="work-card featured">
-            <p class="work-period">2024.10 - 現在</p>
-            <h3>AIチャットゲーム・コンテンツPF / BtoBサービス開発</h3>
-            <p>
-              PM / ディレクターとして、AI要件定義、会話設計、状態遷移、UI/UX設計、
-              Figmaプロトタイピング、運用設計、関係者調整を横断的に担当。
-            </p>
-            <ul>
-              <li>AIチャット仕様書・会話制御設計</li>
-              <li>PC/SP主要画面プロトタイプ</li>
-              <li>決済・規約・管理画面・CSを含む運用設計</li>
-            </ul>
-          </article>
-          <article class="work-card">
-            <p class="work-period">2024.09</p>
-            <h3>求人LP制作 2案件</h3>
-            <p>若年層向け採用LPのデザイン、ビジュアル設計、導線設計を担当。第一印象と応募導線を両立。</p>
-            <a href="https://kominekazuhisa.github.io/webdesign2/">Portfolio 01</a>
-            <a href="https://kominekazuhisa.github.io/webdesign3/">Portfolio 02</a>
-          </article>
-          <article class="work-card">
-            <p class="work-period">2019 - 2024</p>
-            <h3>ゲーム4タイトル立ち上げ・運用</h3>
-            <p>PM / ディレクター / ゲームデザイナーとして、UI/UX、施策、KPI分析、チーム推進を担当。</p>
-            <a href="https://kominekazuhisa.github.io/gamedesign/">Game Design Portfolio</a>
-          </article>
-          <article class="work-card">
-            <p class="work-period">2003 - 2017</p>
-            <h3>SNS / アプリ事業推進</h3>
-            <p>代表 / 事業責任者として、10サイト・6アプリの制作運用、CVR改善、ROAS改善、組織運営を推進。</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section process-section" id="process">
-        <div class="section-heading">
-          <p class="eyebrow">DESIGN PROCESS</p>
-          <h2>UI/UXを成果につなげる進め方</h2>
-        </div>
-        <ol class="process-list">
-          <li>
-            <span>1</span>
-            <h3>整理</h3>
-            <p>目的、ユーザー、制約、運用条件を洗い出す。</p>
+            <p>コンセプト設計と要件定義を行い、プロジェクトの土台をつくります。</p>
           </li>
           <li>
-            <span>2</span>
-            <h3>設計</h3>
-            <p>要件、導線、状態遷移、情報構造を定義する。</p>
+            <i data-lucide="user-round"></i>
+            <h3>UX設計・情報設計</h3>
+            <p>ペルソナ・導線・情報設計で、最適な体験の骨格を設計します。</p>
           </li>
           <li>
-            <span>3</span>
-            <h3>具体化</h3>
-            <p>ワイヤー、UI、プロトタイプで認識を揃える。</p>
+            <i data-lucide="pen-tool"></i>
+            <h3>UI設計・プロトタイプ</h3>
+            <p>UIを具体化し、プロトタイプで体験を可視化・検証します。</p>
           </li>
           <li>
-            <span>4</span>
-            <h3>推進</h3>
-            <p>課題管理、進行管理、関係者調整で前に進める。</p>
-          </li>
-          <li>
-            <span>5</span>
-            <h3>改善</h3>
-            <p>KPIや運用の声から改善点を再設計する。</p>
+            <i data-lucide="rocket"></i>
+            <h3>開発・運用・改善</h3>
+            <p>リリース後もデータを分析し、継続的に改善・成長させます。</p>
           </li>
         </ol>
       </section>
 
-      <section class="section skills-section" id="skills">
-        <div class="section-heading">
-          <p class="eyebrow">SKILLS & LICENSE</p>
-          <h2>星評価ではなく、役割と実務領域で伝える</h2>
+      <section class="bottom-grid">
+        <div class="skill-panel" id="skills">
+          <div class="panel-title">
+            <h2>スキルスタック</h2>
+            <span>SKILLS</span>
+          </div>
+          <div class="skill-table">
+            <b>デザイン</b>
+            <p><span>Figma</span><span>Adobe XD</span><span>Photoshop</span><span>Illustrator</span><span>Dreamweaver</span></p>
+            <b>ディレクション / PM</b>
+            <p><span>要件定義</span><span>情報設計</span><span>UX設計</span><span>会話設計</span><span>仕様設計</span><span>プロジェクト管理</span></p>
+            <b>開発・ツール</b>
+            <p><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Notion</span><span>Jira</span><span>Slack</span><span>Git</span></p>
+            <b>マーケティング / その他</b>
+            <p><span>SEO</span><span>GA4</span><span>アクセス解析</span><span>SNS運用</span><span>広告運用</span></p>
+          </div>
         </div>
-        <div class="skills-layout">
-          <div class="skill-block">
-            <h3>Core</h3>
-            <div class="chips">
-              <span>PM</span>
-              <span>ディレクション</span>
-              <span>要件定義</span>
-              <span>UX設計</span>
-              <span>情報設計</span>
-              <span>UI設計</span>
-              <span>プロトタイピング</span>
-              <span>KPI改善</span>
-            </div>
+
+        <div class="license-panel" id="license">
+          <div class="panel-title">
+            <h2>資格</h2>
+            <span>LICENSE</span>
           </div>
-          <div class="skill-block">
-            <h3>Tools</h3>
-            <div class="chips">
-              <span>Figma</span>
-              <span>Photoshop</span>
-              <span>Excel</span>
-              <span>PowerPoint</span>
-              <span>Notion</span>
-              <span>Jira</span>
-              <span>Slack</span>
-              <span>GitHub</span>
-            </div>
-          </div>
-          <div class="license-block">
-            <h3>License</h3>
-            <ul class="license-list">
-              <li>G検定(AI資格)</li>
-              <li>Webディレクション検定</li>
-              <li>UX検定 ジェネラリスト</li>
-              <li>実用英語技能検定 準2級</li>
-              <li>観光英語検定 2級</li>
-              <li>APOLLO検定</li>
-              <li>普通自動車一種免許</li>
-              <li>防災管理者</li>
-              <li>介護職員初任者研修</li>
-            </ul>
-          </div>
+          <ul class="license-list">
+            <li>G検定（AI資格）</li>
+            <li>Webディレクション検定</li>
+            <li>UX検定 ジェネラリスト</li>
+            <li>実用英語技能検定 準2級</li>
+            <li>観光英語検定 2級</li>
+            <li>APOLLO検定</li>
+            <li>普通自動車一種免許</li>
+            <li>防災管理者</li>
+            <li>介護職員初任者研修</li>
+          </ul>
         </div>
       </section>
 
-      <section class="cta-section">
-        <p class="eyebrow">NEXT PROJECT</p>
-        <h2>制作だけでなく、体験設計や上流整理から相談できます。</h2>
-        <p>AIチャット、SNS、ゲーム、LP、サービス改善など、ユーザー体験を軸にした企画・設計・推進を支援します。</p>
-        <a class="primary-button" href="https://kominekazuhisa.github.io/contact/">相談する</a>
+      <section class="cta-band" id="history">
+        <div>
+          <p>一緒に、価値ある体験をつくりましょう！</p>
+          <span>お仕事のご相談・ご依頼はお気軽にお問い合わせください。</span>
+        </div>
+        <a href="https://kominekazuhisa.github.io/contact/"><i data-lucide="mail"></i>CONTACT <i data-lucide="arrow-right"></i></a>
+        <div class="thanks">Thank you!</div>
       </section>
     </main>
   </body>
