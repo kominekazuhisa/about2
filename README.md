@@ -1,3 +1,3 @@
-# acbout2
+# about2
 
 K.KOMINE portfolio about page redesign prototype.
