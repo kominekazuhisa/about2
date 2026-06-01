@@ -269,9 +269,8 @@ h1 span:last-child {
   width: 220px;
   height: 220px;
   border: 0;
-  border-radius: 50%;
   background: transparent;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .portrait-badge img {
