@@ -204,6 +204,10 @@ img {
   padding: 8px 0 24px;
 }
 
+.hero-copy {
+  min-width: 0;
+}
+
 .section-kicker {
   margin: 0 0 14px;
   color: var(--coral);
@@ -255,6 +259,8 @@ h1 span:last-child {
   font-size: 15px;
   font-weight: 700;
   line-height: 1.75;
+  text-wrap: pretty;
+  overflow-wrap: anywhere;
 }
 
 .hero-mark {
@@ -339,7 +345,7 @@ h1 span:last-child {
 .panel-strip {
   display: grid;
   grid-template-columns: 150px repeat(4, 1fr);
-  gap: 18px;
+  gap: 20px;
   align-items: center;
   padding: 18px 22px;
   margin-bottom: 14px;
@@ -348,8 +354,10 @@ h1 span:last-child {
 .panel-title h2 {
   margin-bottom: 3px;
   color: #000;
-  font-size: 23px;
+  font-size: 22px;
   line-height: 1.15;
+  white-space: nowrap;
+  word-break: keep-all;
 }
 
 .panel-title span {
@@ -361,14 +369,15 @@ h1 span:last-child {
 
 .panel-strip article {
   display: grid;
-  grid-template-columns: 48px 1fr;
-  gap: 8px 14px;
+  grid-template-columns: 44px 1fr;
+  gap: 7px 14px;
+  min-width: 0;
 }
 
 .panel-strip article svg {
   grid-row: span 2;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   align-self: center;
 }
 
@@ -385,11 +394,16 @@ h1 span:last-child {
 
 .panel-strip h3 {
   font-size: 16px;
+  line-height: 1.35;
+  text-wrap: balance;
+  word-break: keep-all;
 }
 
 .panel-strip p {
   font-size: 12px;
   font-weight: 700;
+  line-height: 1.55;
+  text-wrap: pretty;
 }
 
 .capability-panel,
@@ -425,6 +439,8 @@ h1 span:last-child {
 
 .capability-grid h3 {
   font-size: 15px;
+  line-height: 1.35;
+  word-break: keep-all;
 }
 
 .capability-grid p {
@@ -432,6 +448,7 @@ h1 span:last-child {
   font-size: 11px;
   font-weight: 700;
   line-height: 1.5;
+  text-wrap: pretty;
 }
 
 .works-row {
@@ -501,9 +518,9 @@ h1 span:last-child {
 
 .process-flow::before {
   position: absolute;
-  top: 35px;
-  right: 7%;
-  left: 7%;
+  top: 27px;
+  right: 10%;
+  left: 10%;
   height: 2px;
   background: var(--coral);
   content: "";
@@ -512,28 +529,37 @@ h1 span:last-child {
 .process-flow li {
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: 54px 1fr;
-  gap: 7px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  padding: 0 6px;
+  text-align: center;
 }
 
 .process-flow svg {
-  grid-row: span 2;
   width: 54px;
   height: 54px;
   padding: 11px;
   border: 1px solid var(--line);
   border-radius: 50%;
-  background: var(--paper);
+  background: var(--panel);
 }
 
 .process-flow h3 {
-  font-size: 15px;
+  min-height: 21px;
+  font-size: 14px;
+  line-height: 1.35;
+  text-wrap: balance;
+  word-break: keep-all;
 }
 
 .process-flow p {
   font-size: 11px;
   font-weight: 700;
+  line-height: 1.55;
+  text-wrap: pretty;
 }
 
 .bottom-grid {
@@ -561,7 +587,9 @@ h1 span:last-child {
 .skill-table b {
   color: var(--coral);
   font-size: 12px;
+  line-height: 1.35;
   text-align: right;
+  word-break: keep-all;
 }
 
 .skill-table p {
@@ -729,27 +757,71 @@ h1 span:last-child {
 
   .process-flow {
     grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .process-flow::before {
     display: none;
+  }
+
+  .process-flow li {
+    display: grid;
+    grid-template-columns: 54px 1fr;
+    gap: 7px 12px;
+    padding: 0;
+    text-align: left;
+  }
+
+  .process-flow svg {
+    grid-row: span 2;
+  }
+
+  .process-flow h3 {
+    min-height: 0;
   }
 }
 
 @media (max-width: 620px) {
   .page-shell {
     padding: 16px;
+    overflow-x: clip;
   }
 
   .top-nav {
     flex-wrap: wrap;
+    gap: 14px;
     height: auto;
     padding: 8px 0;
     overflow-x: visible;
   }
 
+  .top-nav a {
+    font-size: 11px;
+  }
+
   h1 {
-    font-size: 34px;
+    width: 100%;
+    max-width: calc(100vw - 32px);
+    font-size: 30px;
+    line-height: 1.38;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-all;
+    line-break: anywhere;
+  }
+
+  h1 span {
+    display: inline;
+    max-width: 100%;
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    word-break: break-all;
+    line-break: anywhere;
+  }
+
+  h1 span:first-child::after {
+    white-space: pre;
+    content: "\A";
   }
 
   h1 span:last-child {
@@ -758,6 +830,16 @@ h1 span:last-child {
 
   .role-line {
     font-size: 14px;
+  }
+
+  .lead {
+    width: 100%;
+    max-width: 100%;
+    font-size: 14px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-all;
+    line-break: anywhere;
   }
 
   .hero-stats,
