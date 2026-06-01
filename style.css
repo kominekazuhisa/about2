@@ -197,7 +197,7 @@ img {
 
 .hero-dashboard {
   display: grid;
-  grid-template-columns: minmax(710px, 1.36fr) 180px minmax(280px, 0.68fr);
+  grid-template-columns: minmax(690px, 1.34fr) 220px minmax(280px, 0.68fr);
   gap: 24px;
   align-items: center;
   min-height: 300px;
@@ -266,8 +266,8 @@ h1 span:last-child {
 .portrait-badge {
   display: grid;
   place-items: center;
-  width: 180px;
-  height: 180px;
+  width: 220px;
+  height: 220px;
   border: 0;
   border-radius: 50%;
   background: transparent;
