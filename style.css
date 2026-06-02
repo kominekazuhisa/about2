@@ -329,17 +329,19 @@ h1 span:last-child {
   white-space: nowrap;
 }
 
-.stat-number {
+.stat-card strong .stat-number {
+  display: inline-block;
   font-size: 44px;
   font-weight: 900;
 }
 
-.stat-unit {
+.stat-card strong .stat-unit {
+  display: inline-block;
   font-size: 16px;
   font-weight: 900;
 }
 
-.stat-card:nth-child(3) .stat-number {
+.stat-card:nth-child(3) strong .stat-number {
   font-size: 42px;
 }
 
