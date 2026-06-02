@@ -321,21 +321,31 @@ h1 span:last-child {
 }
 
 .stat-card strong {
-  display: block;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
   color: var(--coral);
-  font-size: 40px;
   line-height: 1.05;
   white-space: nowrap;
 }
 
-.stat-card:nth-child(3) strong {
-  font-size: 36px;
+.stat-number {
+  font-size: 44px;
+  font-weight: 900;
+}
+
+.stat-unit {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.stat-card:nth-child(3) .stat-number {
+  font-size: 42px;
 }
 
 .stat-card:nth-child(2) strong,
 .stat-card:nth-child(4) strong {
   margin: 4px 0 2px;
-  font-size: 32px;
 }
 
 .panel-strip,
